@@ -1,17 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-import Dashboard from "../Pages/Dashboard";
-import Login from "../Pages/Login";
-import Ragister from "../Pages/Ragister";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from "../Pages/Home"
 
-function AllRoutes() {
-    
-    return (
-        <Routes>
-            <Route path={"/"} element={<Dashboard/>} />
-            <Route path={"/login"} element={<Login/>} />
-            <Route path={"/ragister"} element={<Ragister/>} />
-        </Routes>
-    )
+
+
+
+const AllRoutes = ({children}) => {
+  return (
+      <Routes>
+          <Route path='/' element={ <Home/>} />
+    </Routes>
+  )
 }
 
 export default AllRoutes
