@@ -1,38 +1,45 @@
+/* ..............first navbar ..............*/
+/* * {
+    font-family: "Noto Serif", serif;
+} */
 
-/* ..........first navbar................. */
+.main-div {
+    position: sticky;
+    top: 0px;
+    background-color: aqua;
 
-*{
-    font-family: "Noto Serif",serif;
+
+    background-color: white;
 }
 
-
-.second-nav{
+.first-nav {
     width: 100%;
-    height: 90%;
+    height: 90px;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .logo {
-    width: 6%;
+    padding-top: 10px;
+    width: 60px;
+    height: 60px;
+
     border-radius: 50%;
 
 }
 
-.search{
-    
-    margin-top:20px;
-    height:37px;
+.search {
+    margin-top: 20px;
+    height: 37px;
     border: 1px solid gray;
 }
 
-.search-box{
+.search-box {
     width: 90%;
 
-    margin: 2px;
-    padding:4px 90px;
-    outline:none;
+    margin-top: 2px;
+    padding: 4px 90px;
+    outline: none;
     border: none;
 }
 
@@ -45,11 +52,10 @@
     margin-left: 10px;
 }
 
-.search-btn{
-    height: 20px;
-        border: none;
-        background-color: white;
-        
+.search-btn {
+    height: 28px;
+    border: none;
+    background-color: white;
 }
 
 .icon {
@@ -57,12 +63,11 @@
     margin-right: 10px;
     margin-bottom: 11px;
 }
-  
 
 /*................ first navbar .................*/
 
 /*................ second navbar .................*/
-.third-nav {
+.sec-nav {
     display: flex;
     align-items: center;
     /* margin-left: 90px; */
@@ -70,16 +75,14 @@
     border-bottom: 0.1px solid black;
 }
 
-.third-nav>p:hover {
+.sec-nav>p:hover {
     color: black(224, 109, 64);
     cursor: pointer;
     border-bottom: 1px solid grey;
     font-style: italic;
-    text-decoration: none;
-    /* font-size: larger; */
-    /* padding-bottom: 20px; */
+    font-size: larger;
+    padding-bottom: 20px;
 }
- 
 
 /*................ second navbar .................*/
 
@@ -97,7 +100,46 @@
 }
 
 /*................ SLIDER .................*/
+/*................ SkinMedica .................*/
+.main-div-skin-medica {
+    display: flex;
+    align-items: center;
+}
 
+.skinmedica-products>img {
+    width: 80%;
+}
+
+/*................ SkinMedica .................*/
+
+/* Shop By Category */
+.shp-main-div {
+    display: flex;
+    width: 100%;
+}
+
+.shp-cate>img {
+    width: 70%;
+}
+
+/* Shop By Category */
+
+/* Best SEller */
+.best-sell-main-div>div>img {
+    width: 90%;
+}
+
+/* Brand Featured */
+.Brand-Fe {
+    display: flex;
+    align-items: center;
+}
+
+.Brand-Fe>div>img {
+    width: 70%;
+}
+
+/* -----------footer start---------*/
 .first-foot,
 .sec-foot,
 .third-foot {
@@ -133,3 +175,65 @@
 
 /* -----------footer end ---------*/
 
+
+/* -----------Admin start ------------ */
+.admin-container {
+    height: 600px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(185, 179, 179, 0.5),
+            rgba(231, 226, 226, 0.5)),
+        url("https://img.freepik.com/premium-vector/dashboard-ui-admin-panel-design-template-with-infographic-elements_9209-2835.jpg?w=1380") center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 40%;
+    padding: 20px;
+    background-color: rgb(243, 240, 214);
+    opacity: 70%;
+}
+
+.Title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp-box {
+    padding: 7px;
+}
+
+.sub-btn {
+    width: 30%;
+    background-color: rgb(179, 222, 247);
+    border: none;
+    border-radius: 20px;
+}
+
+/* -----------Admin end------------ */
+/* NailPolish */
+.main-nail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.main-nail>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.4s ease all;
+    /* width: 62%; */
+}
+
+.nail-img {
+    width: 60%;
+}
+
+/* NailPolish */

@@ -1,140 +1,54 @@
 import React from "react";
 import Styles from "./Styles.css";
-import logo from "../images/logo.jpg";
 import { Link } from "react-router-dom";
-import { BiSearch } from "react-icons/bi";
-import { BiUserCircle } from "react-icons/bi";
-import { BiCart } from "react-icons/bi";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from "@chakra-ui/react"
-
-
+import Logo from "../Images/logo.jpg";
+import { FaSearch } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
+import { FaUserCog } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="main-Nav">
-      <div className="first-nav"></div>
-      <div className="second-nav">
-        <img className="logo" src={logo} alt="lyfcare" />
+    <div className="main-div">
+      <div className="first-nav">
+        <img className="logo" src={Logo} alt="We Care" />
         <div className="search">
           <input
             type="text"
-            name=""
             className="search-box"
-            placeholder="search for a brand or a product "
+            placeholder="search for a brand or a product"
           />
           <button className="search-btn">
-            <BiSearch />
+            <FaSearch />
           </button>
         </div>
         <div className="account">
-          <BiUserCircle className="icon" />
+          <FaUserCircle className="icon" />
           <p>
-            <Menu isLazy>
-              <MenuButton>Account</MenuButton>
-              <MenuList>
-                {/* MenuItems are not rendered unless Menu is open */}
-                <MenuItem>New Window</MenuItem>
-                <MenuItem>Open Closed Tab</MenuItem>
-                <MenuItem>Open File</MenuItem>
-              </MenuList>
-            </Menu>
+            <Link
+              to="/register"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              Account
+            </Link>
           </p>
         </div>
         <div className="cart">
-          <BiCart className="icon" />
+          <FaCartPlus className="icon" />
           <p>Cart</p>
         </div>
+        {/* <div className="admin-div">
+          <FaUserCog className="icon" />
+          <Link to="/admin" style={{ textDecoration: "none", color: "black" }}>
+            <p>Admin</p>
+          </Link>
+        </div> */}
       </div>
-      <div className="third-nav">
+      <div className="sec-nav">
         <p>
-          <Menu isLazy>
-            <MenuButton>Open menu</MenuButton>
-            <MenuList>
-              {/* MenuItems are not rendered unless Menu is open */}
-              <MenuItem>
-                <div
-                  style={{
-                    display: "flex",
-                    border: "1px solid red",
-                    width: "600px",
-                    height: "300px",
-                    justifyContent: "space-between",
-                    
-                  }}
-                >
-                  <div>
-                    <p>
-                      {" "}
-                      <Link>link1</Link>
-                    </p>
-                    <p>
-                      <Link>link2</Link>
-                    </p>
-                    <p>
-                      <Link>link3</Link>
-                    </p>
-                    <p>
-                      <Link>link4</Link>
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      {" "}
-                      <Link>link1</Link>
-                    </p>
-                    <p>
-                      <Link>link2</Link>
-                    </p>
-                    <p>
-                      <Link>link3</Link>
-                    </p>
-                    <p>
-                      <Link>link4</Link>
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      {" "}
-                      <Link>link1</Link>
-                    </p>
-                    <p>
-                      <Link>link2</Link>
-                    </p>
-                    <p>
-                      <Link>link3</Link>
-                    </p>
-                    <p>
-                      <Link>link4</Link>
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      {" "}
-                      <Link>link1</Link>
-                    </p>
-                    <p>
-                      <Link>link2</Link>
-                    </p>
-                    <p>
-                      <Link>link3</Link>
-                    </p>
-                    <p>
-                      <Link>link4</Link>
-                    </p>
-                  </div>
-                </div>
-              </MenuItem>
-            </MenuList>
-          </Menu>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            Brand
+          </Link>
         </p>
         <p>Holiday Shoop</p>
         <p>Bestseller</p>
