@@ -51,12 +51,18 @@ export default function CaptionCarousel() {
       image:
         "https://static.thcdn.com/images/xlarge/webp/widgets/208-us/27/original-0223_47424_DS_MH_Shot_28_Batching_HomePage-1920x700.jpeg-061027.jpg",
     },
+    {
+      title: "The Ultimate Gift",
+      text: "Our curated roundup of 50 merry- making &I glow giving skin,hair & beauty gifts for everyone on your list",
+      image:
+        "https://static.thcdn.com/images/xlarge/webp/widgets/208-us/41/original-0329_48991_THG0035423_DS_CM_April_Batching_1920x700-012441.jpeg",
+    },
   ];
 
   return (
     <Box
       position={"relative"}
-      height={"400px"}
+      height={"600px"}
       width={"full"}
       overflow={"hidden"}
     >
@@ -111,7 +117,7 @@ export default function CaptionCarousel() {
             backgroundImage={`url(${card.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="400px" position="relative">
+            <Container size="container.lg" height="600px" position="relative">
               <Stack
                 spacing={6}
                 w={"full"}
