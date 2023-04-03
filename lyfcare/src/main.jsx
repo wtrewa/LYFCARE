@@ -8,6 +8,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <AuthContextProvider>
     <BrowserRouter>
