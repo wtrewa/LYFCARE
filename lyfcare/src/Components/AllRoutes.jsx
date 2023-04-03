@@ -11,8 +11,8 @@ const AllRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/admin" element={<Products />}></Route>
       <Route path="/nail" element={<Nailpolish />}></Route>
-      {/* <Route path="/log" element={<LoginSignUp />}></Route>
-      <Route path="/register" element={<Register />}></Route> */}
+      {/* <Route path="/login" element={<Login />}></Route> */}
+      {/* <Route path="/register" element={<Register />}></Route>  */}
     </Routes>
   );
 };
