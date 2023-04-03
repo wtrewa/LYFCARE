@@ -5,7 +5,7 @@
 DERMSTORE is a E-commerce website which sell Body and Cusmetic reletaed products. This website build upon useing HTML CSS Javascript and React.
 Individual Project
 Deploy Link:-https://shiny-bublanina-82c10d.netlify.app
-## Duration We made this project within the 4 days
+
 Screens
 Homepage / Landing Page
 Product Listing Page with all categories
