@@ -1,10 +1,11 @@
 import React from "react";
 import Styles from "./Styles.css";
+import { Heading } from "@chakra-ui/react";
 
 const BrandFe = () => {
   return (
     <div>
-      <h3>Featured Brands</h3>
+      <Heading textAlign={'center'}>Featured Brands</Heading>
       <div className="Brand-Fe">
         <div>
           <img

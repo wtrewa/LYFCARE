@@ -1,10 +1,11 @@
 import React from "react";
 import Styles from "./Styles.css";
+import { Heading } from "@chakra-ui/react";
 
 const ShopCategory = () => {
   return (
     <div>
-      <h3>SHOP BY CATEGORY</h3>
+      <Heading as={"h3"}>SHOP BY CATEGORY</Heading>
       <div className="shp-main-div">
         <div className="shp-cate">
           <img
